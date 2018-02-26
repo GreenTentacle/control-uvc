@@ -34,11 +34,6 @@ try:
 except ipaddress.AddressValueError:
     parser.error("NVR Address doesn't appear to be a valid IP address\nPlease format like 192.168.1.100")
 
-# if args.pos_arg > 10:
-#     parser.error("pos_arg cannot be larger than 10")
-
-lUrlPieces = []
-
 if args.https is True:
     proto = 'https'
 else:
