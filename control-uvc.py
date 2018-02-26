@@ -10,7 +10,7 @@ import ipaddress
 parser = argparse.ArgumentParser(description='Start or stop recording on a Unifi Video Cameras via the Unifi NVR.\n'
                                              'Useful as a helper in Home Automation software.')
 parser.add_argument("nvrIP",
-                    help="IP address and port of the Unifi NVR in the form n.n.n.n")
+                    help="IP address of the Unifi NVR in the form n.n.n.n")
 parser.add_argument("camUUID",
                     help="UUID of the camera you want to control")
 parser.add_argument("camName",
